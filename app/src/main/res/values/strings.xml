@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Movva Army</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="exit"><b>ప్రజలే దేవుళ్లు సమాజమే దేవాలయం\n- మొవ్వ సత్యనారాయణ -\nPLEASE PRESS THE ICON TO EXIT</b></string>
+    <!--ప్రజలే దేవుళ్లు సమాజమే దేవాలయం-->
+    <!-- - మొవ్వ సత్యనారాయణ - -->
+</resources>
