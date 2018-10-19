@@ -17,12 +17,14 @@ import android.widget.TextView;
 
 import java.util.Objects;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+{
 
     WebView webView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -37,17 +39,22 @@ public class MainActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
-    public void onBackPressed() {
-        if (webView.canGoBack()) {
+    public void onBackPressed()
+    {
+        if (webView.canGoBack())
+        {
             webView.goBack();
-        } else {
+        } else
+        {
             AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             LayoutInflater layoutInflater = LayoutInflater.from(MainActivity.this);
             final View view = layoutInflater.inflate(R.layout.sample, null);
             builder.setView(view);
-            builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            builder.setNegativeButton("No", new DialogInterface.OnClickListener()
+            {
                 @Override
-                public void onClick(DialogInterface dialog, int which) {
+                public void onClick(DialogInterface dialog, int which)
+                {
                     dialog.cancel();
                 }
             }).setCancelable(false).setMessage(R.string.exit);
@@ -59,7 +66,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void exit(View view) {
+    public void exit(View view)
+    {
         MainActivity.super.onBackPressed();
     }
 }
